@@ -13,7 +13,7 @@ text-transform: uppercase;
   background-clip: border-box;
   background-size: 200% auto;
 
-  color: #fff;
+
   background-clip: text;
   text-emphasis-color: transparent;
   -webkit-background-clip: text;
@@ -30,20 +30,19 @@ text-transform: uppercase;
 }
 
 
- *
- {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: #053e1d;
- 
+*
+{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+  
 }
 
 li, a, button {
     font-family: "Salsa";
     font-weight: 500;
     font-size: 16px;
-    color: #edf0f1;
+    color: #9e0c0c;
     text-decoration: none;
     padding: 10px;
 
@@ -54,6 +53,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     padding: 30px 10%;
+    background-color: #053e1d;
 }
 
 
@@ -71,13 +71,12 @@ header {
 
 }
 .nav_links li a:hover {
-    color: #008a90;
+    color: #dfdda3;
 }
 
 button {
     margin-left: 20px;
     padding: 9px 25px;
-    background-color: rgba(0,136,169,1)
     border: none;
     border-radius: 50px;
     cursor: pointer: 
@@ -85,7 +84,27 @@ button {
 }
 
 button:hover {
-    background-color: rgba(0,136,169,0.8)
+    background-color: #dfdda3
 }
 
+.main_container {
+    margin: auto;
+    width: 860px;
+    padding: 20px;
+    background: #ecae12;
+    border: 1px solid #000000;
+    min-height: 500px;
+    
+
+}
+
+form {
+    position:relative;
+    width  : 740px;
+    height : 498px;
+    margin : 0 auto;
+    padding: 1em;
+    box-sizing: border-box;
+    background : #FFF url(background.jpg);
+}
 
