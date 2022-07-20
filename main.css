@@ -84,27 +84,50 @@ button {
 }
 
 button:hover {
-    background-color: #dfdda3
+    background-color: #59ff0c
 }
+
 
 .main_container {
     margin: auto;
     width: 860px;
     padding: 20px;
     background: #ecae12;
-    border: 1px solid #000000;
+    border: 5px solid #000000;
     min-height: 500px;
-    
+    font-weight: 700;
+} 
 
+h1 {
+    color:#9e0c0c;
+    text-align: center;
+    font-style: helvetica;
 }
 
-form {
-    position:relative;
-    width  : 740px;
-    height : 498px;
-    margin : 0 auto;
-    padding: 1em;
-    box-sizing: border-box;
-    background : #FFF url(background.jpg);
+p {
+    color:#053e1d;
+    text-align: center;
+}
+
+figure {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+   
+}
+
+section {
+    display: flex;
+    height: 5em;
+    align-items: center;
+    justify-content: center 
+}
+
+footer {
+    background: #2c3231;
+    color: #dfdda3;
+    margin-bottom: auto;
+   
 }
 
