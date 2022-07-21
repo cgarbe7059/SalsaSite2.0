@@ -90,7 +90,7 @@ button:hover {
 
 .main_container {
     margin: auto;
-    width: 860px;
+    width: 1000px;
     padding: 20px;
     background: #ecae12;
     border: 5px solid #000000;
@@ -114,6 +114,13 @@ figure {
     justify-content: flex-end;
     align-items: center;
     padding: 30px 10%;
+   
+}
+
+.crew {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
    
 }
 
