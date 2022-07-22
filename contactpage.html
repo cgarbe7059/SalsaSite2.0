@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salsa Monsta</title>
-    <script src="app.js"></script> 
 </head>
 
 <body>
 <h1>Contact Us</h1>
+
 <nav>
     <ul class="nav_links">
         <li><a href="index.html">Home</a></li>
     </ul>
 </nav>
 
-<select id="Salsa Purchased">
+<select id="Salsa Flavor">
     <option disabled selected value> -- Salsa Flavor -- </option>
     <option value="Mild">Mild</option>
     <option value="Spicy">Spicy</option>
@@ -24,22 +24,25 @@
    </select>
  <br></br>
 
-<input type="text" placeholder="Enter your last name" id="lastName" />
-<input type="text" placeholder="Enter your first name" id="firstName" />
-<br></br>
+ <form id="myForm" action="/thanks.html">
+<input type="firstName" placeholder="First Name" name="fname">
+    <br></br>
+<input type="lastName" placeholder="Last Name" name="lname">
+<br><br>
 <input type="email" placeholder="Enter your email" id="email" />
 <br></br>
 <input type="text" placeholder="Address" id="address" />
+<br></br>
 <input type="text" placeholder="Phone Number" id="phoneNumber" />
-
 <br><br>
-
 <input type="checkbox" id="newsletter" />Send me monthly newsletter
 <br><br>
 <span>What is your question?</span>
 <br>
 <textarea id="question" rows="4"></textarea>
 <br><br>
-<button onclick="sendContact();">Send contact</button>
+<input type="button" onclick="myFunction()" value="Submit form">
+</form>
 </body>
+<script src="/form.js"></script> 
 </html>
