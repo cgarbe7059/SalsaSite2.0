@@ -20,11 +20,7 @@
             <li><a href="monsters.html">Monsters</a></li>
         </ul>
     </nav>
-    <div class="filters">
-        <span class="filter" data-filter="dev">Mild</span>
-        <span class="filter" data-filter="design">Spicy</span>
-        <span class="filter" data-filter="all">Verde</span>
-    </div>
+  
 <a class="cta" href="contactpage.html"><button>Contact</button></a>
 
    </header>
@@ -38,21 +34,58 @@
         <img src="images/salsajar.JPG" style= "width:300px; height:300px;">
         <img src="images/salsajar.JPG" style= "width:300px; height:300px;">
         <img src="images/salsajar.JPG" style= "width:300px; height:300px;">
-        <img src="images/salsajar.JPG" style= "width:300px; height:300px;">
-        <img src="images/salsajar.JPG" style= "width:300px; height:300px;">
-
     </figure>
 
-
-    <section>
-        <label for="spice meter">How much spice can <e>YOU</e> handle?</label>
-        <br><br>
+    <table border = "4" cellspacing = "3" cellpadding = "3" bgcolor = "white">
+        <col width = "250">
+        <col width = "400">
+        <col width = "200">
+        <col width = "200">
+        <col width = "200">
         
-        <div class="span"><em>Timid</em></span>
-        <input id="volume" name="volume" type="range" min="0" max="100" step="1"><span>BEAST</span>
-        </form>
-    </section>
+        <tr>
+            <td align = "center"><h2 id = "item_name">Mild Mike Salsa</h2></td>
+            <td><b>Price :</b> <span id = "item_price" value = "4.00">$4.00</span><br>
+            <td><b>Quantity :</b> <input type = "text" value = "1" id = "quantity" onKeyUp="test();" style="width: 50px;"></td>
+            <td align = "center"><button value="4.00" name="product" id="button" onclick="test(this);">Add to Cart</button></td>
+        </tr>
+        
+        <tr>
+            <td align = "center"><h2 id = "item_name">Spicy Salem Salsa</h2></td>
+            <td><b>Price :</b> <span id = "item_price" value = "4.00">$4.00</span><br>
+            <td><b>Quantity :</b> <input type = "text" value = "1" id = "quantity" onKeyUp="test();" style="width: 50px;"></td>
+            <td align = "center"><button value="4.00" name="product" id="button" onclick="test(this);">Add to Cart</button></td>
+        </tr>
+        
+        <tr>
+            <td align = "center"><h2 id = "item_name">Salsa Vinny Verde</h2></td>
+            <td><b>Price :</b> <span id = "item_price" value = "3.00">$3.00</span><br>
+            <td><b>Quantity :</b> <input type = "text" value = "1" id = "quantity" onKeyUp="test();" style="width: 50px;"></td>
+            <td align = "center"><button value="3.00" name="product" id="button" onclick="test(this);">Add to Cart</button></td>
+        </tr>
+        
+        
+        </table>
     
+    <table border = "0" cellspacing = "3" cellpadding = "3" bgcolor = "white" width = "700" align = "center">	
+    
+        <tr>
+        <td align = "center">Subtotal: <span id = "totaltext" value = "0">0</span>
+        (<span id="items" value = "0">0</span> items)</td>
+        </tr>
+        
+    
+    </table>
+    
+    <form action="/confirmorder.html">
+        <input type="submit" value="Submit">
+      </form>
+    
+    </body>
+       
+    
+    <script src="/app.js"></script> 
+    </html>
     <footer>
         &copy; Monster Salsa Inc.
     </footer>
