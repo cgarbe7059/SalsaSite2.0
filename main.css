@@ -60,7 +60,6 @@ header {
     background-color: #053e1d;
 }
 
-
 .nav_links{
     list-style: none;
 }
@@ -93,10 +92,11 @@ button:hover {
 .main_container {
     margin: auto;
     width: 100%;
-    padding: 20px;
+    padding: 30px;
     background: #ecae12;
     border: 5px solid #000000;
     min-height: 500px;
+    min-width: 500px;
     font-weight: 700;
    
 } 
@@ -128,24 +128,24 @@ figure {
    
 }
 
-.crew {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-   
-}
-
 section {
     display: flex;
     height: 5em;
     align-items: center;
     justify-content: center 
+
 }
+  
+.responsive {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
     
+  }
 
 footer {
     background: #2c3231;
     color: #dfdda3;
     margin-bottom: auto;
-   
+
 }

@@ -16,7 +16,7 @@
      <nav>
         <ul class="nav_links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="ourstyle.html">Shop</a></li>
+            <li><a href="shop.html">Shop</a></li>
             <li><a href="monsters.html">Monsters</a></li>
         </ul>
     </nav>
@@ -31,23 +31,25 @@
         <p>Each level of spice are packed with delicious, all natural flavors.</p>
 
     <figure>
-        <img src="images/salsajar.JPG" style= "width:300px; height:300px;">
-        <img src="images/salsajar.JPG" style= "width:300px; height:300px;">
-        <img src="images/salsajar.JPG" style= "width:300px; height:300px;">
+        <img src="images/Mike Jar.jpg" style= "width:325px; height:300px;">
+        <img src="images/Salem Jar.png" style= "width:325px; height:300px;">
+        <img src="images/Vinny Jar.png" style= "width:325px; height:300px;">
     </figure>
 
-    <table border = "4" cellspacing = "3" cellpadding = "3" bgcolor = "white">
+    <table border = "4" cellspacing = "3" cellpadding = "3" bgcolor = "#dfdda3">
         <col width = "250">
         <col width = "400">
         <col width = "200">
         <col width = "200">
-        <col width = "200">
+        <col width = "150">
         
         <tr>
             <td align = "center"><h2 id = "item_name">Mild Mike Salsa</h2></td>
             <td><b>Price :</b> <span id = "item_price" value = "4.00">$4.00</span><br>
             <td><b>Quantity :</b> <input type = "text" value = "1" id = "quantity" onKeyUp="test();" style="width: 50px;"></td>
             <td align = "center"><button value="4.00" name="product" id="button" onclick="test(this);">Add to Cart</button></td>
+            <td align = "center"><img src ="images/thumbnailmike (1).jpg"></td> 
+           
         </tr>
         
         <tr>
@@ -55,6 +57,7 @@
             <td><b>Price :</b> <span id = "item_price" value = "4.00">$4.00</span><br>
             <td><b>Quantity :</b> <input type = "text" value = "1" id = "quantity" onKeyUp="test();" style="width: 50px;"></td>
             <td align = "center"><button value="4.00" name="product" id="button" onclick="test(this);">Add to Cart</button></td>
+            <td align = "center"><img src ="images/thumbnailsalem (1).jpg"></td> 
         </tr>
         
         <tr>
@@ -62,24 +65,27 @@
             <td><b>Price :</b> <span id = "item_price" value = "3.00">$3.00</span><br>
             <td><b>Quantity :</b> <input type = "text" value = "1" id = "quantity" onKeyUp="test();" style="width: 50px;"></td>
             <td align = "center"><button value="3.00" name="product" id="button" onclick="test(this);">Add to Cart</button></td>
+            <td align = "center"><img src ="images/thumbnailvinny (2).jpg"></td> 
         </tr>
         
         
         </table>
     
-    <table border = "0" cellspacing = "3" cellpadding = "3" bgcolor = "white" width = "700" align = "center">	
+        <table border = "4" cellspacing = "3" cellpadding = "3" bgcolor = "#dfdda3">
+            <col width = "250">
+            <col width = "200">
+            <col width = "200">
     
-        <tr>
-        <td align = "center">Subtotal: <span id = "totaltext" value = "0">0</span>
+        <tr>    
+        <td align = "center" width = "900">Subtotal: <span id = "totaltext" value = "0">0</span>
         (<span id="items" value = "0">0</span> items)</td>
+        <td align = "center"><form action="/confirmorder.html"><input type="submit" value="Submit"></form></td>
+        <td align = "center"><form action="/shop.html"><input type="submit" value="Reset"></form></td>
         </tr>
         
     
     </table>
     
-    <form action="/confirmorder.html">
-        <input type="submit" value="Submit">
-      </form>
     
     </body>
        
