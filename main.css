@@ -1,7 +1,3 @@
-@media screen and (min-width: 600px) {
-    .element 
-}
- 
  @import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
 
  .logo
@@ -44,9 +40,9 @@ text-transform: uppercase;
 
 li, a, button {
     font-family: "Salsa";
-    font-weight: 1000;
+    font-weight: 500;
     font-size: 22px;
-    color: #c00b0b;
+    color: #ecae12;
     text-decoration: none;
     padding: 10px;
 
@@ -66,10 +62,6 @@ header {
 }
 
 
-.nav_links{
-    list-style: none;
-}
-
 .nav_links li {
     display: inline-block;
     padding: 0px, px;
@@ -88,6 +80,7 @@ button {
     border: none;
     border-radius: 50px;
     transition: all 0.3s ease 0s;
+    color: #000;
 }
 
 button:hover {
