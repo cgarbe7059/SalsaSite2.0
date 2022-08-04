@@ -1,8 +1,11 @@
  @import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
 
- .logo
-{
-    
+ h3.logo {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+  /* Animation for Logo */
 text-transform: uppercase;
   background-image: linear-gradient(-225deg,
     #07a629 10%,
@@ -20,8 +23,7 @@ text-transform: uppercase;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 5s linear;
-  margin-right: auto;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 @keyframes textclip {
@@ -30,13 +32,88 @@ text-transform: uppercase;
   }
 }
 
+/*Adjusts to fit to screen*/
 *
 {
    box-sizing: border-box;
    margin: 0;
    padding: 0;
-  
 }
+
+/*Hamburger Button*/
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+.menu__btn {
+  position: fixed;
+  top: 50px;
+  left: 20px;
+  width: 40px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #dfdda3;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #ffdb7e;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #053e1d;
+  font-family: 'Salsa', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+
+/* Color Pallete and theme to site*/
 
 li, a, button {
     font-family: "Salsa";
@@ -48,7 +125,7 @@ li, a, button {
 
 }
 
-
+/*Contains logo, li links, and hambuger icon*/
 header {
     display: flex;
     justify-content: flex-end;
@@ -62,20 +139,7 @@ header {
     min-width: 500px;
 }
   
-.nav_links li {
-    display: inline-block;
-    padding: 0px, px;
-}
-
-
-.nav_links li a {
-    transition: all 0.3s ease 0s;
-
-}
-.nav_links li a:hover {
-    color: #dfdda3;
-}
-
+/*Contact Button*/
 button {
     margin-left: 20px;
     border: none;
@@ -88,7 +152,7 @@ button:hover {
     background-color: #59ff0c
 }
 
-
+/*Conatins Salsa Monster Artwork*/
 .main_container {
     margin: auto;
     width: 100%;
@@ -106,6 +170,8 @@ button:hover {
     }
   }
   
+
+ /*Positons index.html artwork*/ 
 .center {
     display: block;
     margin-left: auto;
@@ -124,6 +190,7 @@ p {
     text-align: center;
 }
 
+
 figure {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
@@ -131,6 +198,14 @@ figure {
     background-color: green; 
     padding: 10px; 
    
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  grid-gap: 10px; 
+  background-color: #ecae12; 
+  padding: 10px; 
 }
 
 section {
@@ -154,3 +229,4 @@ footer {
     margin-bottom: auto;
 
 }
+

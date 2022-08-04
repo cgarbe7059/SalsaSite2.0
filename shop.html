@@ -11,18 +11,22 @@
 <body>
 
 <header>
-    <!-- Navigation Links -->
+    <!-- Navigation Links and logo -->
     <h3 class="logo">SALSA MONSTA</h3> 
-    <script></script>   
-     <nav>
-        <ul class="nav_links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="monsters.html">Monsters</a></li>
-        </ul>
-    </nav>
-  
-<a class="cta" href="contactpage.html"><button>Contact</button></a>
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+    
+        <ul class="menu__box">
+            <li><a class="menu__item" href="/index.html">Home</a></li>
+            <li><a class="menu__item" href="/shop.html">Shop</a></li>
+            <li><a class="menu__item" href="/monsters.html">Monsters</a></li>
+            <li><a class="menu__item" href="/contactpage.html">Contact</a></li>
+          </ul>
+        </div>
+    
 
    </header>
 
@@ -39,13 +43,9 @@
     </figure>
 
 
-        <!-- Table to place orders and onclick functions -->
-    <table border = "4" cellspacing = "3" cellpadding = "3" bgcolor = "#dfdda3">
-        <col width = "250">
-        <col width = "400">
-        <col width = "200">
-        <col width = "200">
-        <col width = "150">
+        <!-- Table size se to place orders and onclick functions -->
+    <table border = "4" cellspacing = "3" cellpadding = "3" >
+    
         
         <tr>
             <td align = "center"><h2 id = "item_name">Mild Mike Salsa</h2></td>
@@ -72,16 +72,12 @@
             <td align = "center"><img src ="images/thumbnailvinny (2).jpg"></td> 
         </tr>
         
-        
         </table>
     
 
             <!-- Subtotal HTML/Javascript Functions -->
-        <table border = "4" cellspacing = "3" cellpadding = "3" bgcolor = "#dfdda3">
-            <col width = "250">
-            <col width = "200">
-            <col width = "200">
-    
+        <table border = "4" cellspacing = "3" cellpadding = "3">
+        
         <tr>    
         <td align = "center" width = "900">Subtotal: <span id = "totaltext" value = "0"></span>
         <span id="items" value = "1"></span></td>
