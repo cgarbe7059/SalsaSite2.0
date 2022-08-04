@@ -11,6 +11,7 @@
 <body>
 
 <header>
+    <!-- Navigation Links -->
     <h3 class="logo">SALSA MONSTA</h3> 
     <script></script>   
      <nav>
@@ -25,17 +26,20 @@
 
    </header>
 
-    
+
     <div class="main_container">
         <h1>Warning: May cause Monstrous Cravings!</h1>
         <p>Each level of spice are packed with delicious, all natural flavors.</p>
-
+    
+        <!-- Images included in shopping table -->
     <figure>
         <img src="images/Mike Jar.jpg" style= "width:325px; height:300px;">
         <img src="images/Salem Jar.png" style= "width:325px; height:300px;">
         <img src="images/Vinny Jar.png" style= "width:325px; height:300px;">
     </figure>
 
+
+        <!-- Table to place orders and onclick functions -->
     <table border = "4" cellspacing = "3" cellpadding = "3" bgcolor = "#dfdda3">
         <col width = "250">
         <col width = "400">
@@ -45,18 +49,18 @@
         
         <tr>
             <td align = "center"><h2 id = "item_name">Mild Mike Salsa</h2></td>
-            <td><b>Price :</b> <span id = "item_price" value = "4.00">$4.00</span><br>
-            <td><b>Quantity :</b> <input type = "text" value = "1" id = "quantity" onKeyUp="test();" style="width: 50px;"></td>
-            <td align = "center"><button value="4.00" name="product" id="button" onclick="test(this);">Add to Cart</button></td>
+            <td><b>Price :</b> <span id = "item_price" value = "4.50">$4.50</span><br>
+            <td><b>Quantity: 1</b></td>
+            <td align = "center"><button value="4.50" name="product" id="button" onclick="test(this);">Add to Cart</button></td>
             <td align = "center"><img src ="images/thumbnailmike (1).jpg"></td> 
            
         </tr>
         
         <tr>
             <td align = "center"><h2 id = "item_name">Spicy Salem Salsa</h2></td>
-            <td><b>Price :</b> <span id = "item_price" value = "4.00">$4.00</span><br>
+            <td><b>Price :</b> <span id = "item_price" value = "4.25">$4.25</span><br>
             <td><b>Quantity: 1</b> </td>
-            <td align = "center"><button value="4.00" name="product" id="button" onclick="test(this);">Add to Cart</button></td>
+            <td align = "center"><button value="4.25" name="product" id="button" onclick="test(this);">Add to Cart</button></td>
             <td align = "center"><img src ="images/thumbnailsalem (1).jpg"></td> 
         </tr>
         
@@ -71,14 +75,16 @@
         
         </table>
     
+
+            <!-- Subtotal HTML/Javascript Functions -->
         <table border = "4" cellspacing = "3" cellpadding = "3" bgcolor = "#dfdda3">
             <col width = "250">
             <col width = "200">
             <col width = "200">
     
         <tr>    
-        <td align = "center" width = "900">Subtotal: <span id = "totaltext" value = "0">0</span>
-        (<span id="items" value = "0">0</span> items)</td>
+        <td align = "center" width = "900">Subtotal: <span id = "totaltext" value = "0"></span>
+        <span id="items" value = "1"></span></td>
         <td align = "center"><form action="/confirmorder.html"><input type="submit" value="Submit"></form></td>
         <td align = "center"><form action="/shop.html"><input type="submit" value="Reset"></form></td>
         </tr>
